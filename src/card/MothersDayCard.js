@@ -155,7 +155,12 @@ const MothersDayCard = () => {
           ))}
         </h1>
         <h1 className="text-6xl font-bold text-pink-700 tracking-wide mb-2 drop-shadow-lg">
-          {showText && "MOTHER'S DAY".split('').map((letter, index) => (
+          {showText && "MOTHERS".split('').map((letter, index) => (
+            <span key={`mothers-day-${index}`} className="letter">{letter}</span>
+          ))}
+        </h1>
+        <h1 className="text-6xl font-bold text-pink-700 tracking-wide mb-2 drop-shadow-lg">
+          {showText && "DAY".split('').map((letter, index) => (
             <span key={`mothers-day-${index}`} className="letter">{letter}</span>
           ))}
         </h1>
